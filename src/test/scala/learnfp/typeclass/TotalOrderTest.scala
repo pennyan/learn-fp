@@ -16,5 +16,9 @@ class TotalOrderTest extends FlatSpec with Matchers {
 
   "total order" should "compare list of ints" in {
     Comparator.less(List(5, 10), List(10, 20)) shouldBe true
+    Comparator.less(List(1, 5, 10), List(10, 20)) shouldBe true
+    Comparator.less(List(1, 5, 10), Nil) shouldBe false
+    Comparator.less(Nil, List(1, 5, 10)) shouldBe true
+    Comparator.less(List(5, 10), List(5, 20)) shouldBe true
   }
 }
