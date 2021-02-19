@@ -1,4 +1,10 @@
 .idea/
+.bloop/
+.metals/
+.vscode/
 project/target/
 project/project/
+project/.bloop/
+project/build.properties
+project/metals.sbt
 target/
